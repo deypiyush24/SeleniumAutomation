@@ -1,0 +1,77 @@
+{
+  "environment": {
+    "baseUrl": "https://staging.example.com",
+    "timeoutSeconds": 30,
+    "implicitWaitSeconds": 10,
+    "defaultBrowser": "chrome"
+  },
+  "execution": {
+    "headless": true,
+    "takeScreenshotOnFailure": true,
+    "gridUrl": "http://localhost:4444/wd/hub"
+  },
+  "browsers": {
+    "chrome": {
+      "name": "Google Chrome",
+      "browserName": "chrome",
+      "platform": "ANY",
+      "headless": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "args": [
+        "--start-maximized",
+        "--disable-notifications",
+        "--disable-infobars",
+        "--disable-gpu",
+        "--no-sandbox",
+        "--disable-dev-shm-usage"
+      ],
+      "prefs": {
+        "download.default_directory": "/tmp/downloads",
+        "profile.default_content_setting_values.notifications": 2
+      }
+    },
+    "edge": {
+      "name": "Microsoft Edge",
+      "browserName": "MicrosoftEdge",
+      "platform": "ANY",
+      "headless": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "args": [
+        "--start-maximized",
+        "--disable-notifications",
+        "--inprivate",
+        "--no-sandbox",
+        "--disable-dev-shm-usage"
+      ],
+      "prefs": {
+        "download.default_directory": "/tmp/downloads"
+      }
+    },
+    "firefox": {
+      "name": "Mozilla Firefox",
+      "browserName": "firefox",
+      "platform": "ANY",
+      "headless": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "args": [
+        "-width=1920",
+        "-height=1080"
+      ],
+      "prefs": {
+        "browser.download.dir": "/tmp/downloads",
+        "browser.download.folderList": 2,
+        "browser.helperApps.neverAsk.saveToDisk": "application/pdf,application/octet-stream",
+        "dom.webnotifications.enabled": false
+      }
+    }
+  }
+}

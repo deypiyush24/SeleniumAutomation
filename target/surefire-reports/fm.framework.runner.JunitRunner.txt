@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: fm.framework.runner.JunitRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! -- in fm.framework.runner.JunitRunner
-fm.framework.runner.JunitRunner -- Time elapsed: 0.002 s <<< ERROR!
-org.junit.platform.suite.engine.NoTestsDiscoveredException: Suite [fm.framework.runner.JunitRunner] did not discover any tests
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.050 s -- in fm.framework.runner.JunitRunner

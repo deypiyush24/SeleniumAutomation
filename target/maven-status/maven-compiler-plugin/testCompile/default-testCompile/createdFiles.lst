@@ -1,2 +1,3 @@
+fm/framework/runner/RegressionRunner.class
 fm/framework/runner/JunitRunner.class
-fm/framework/stepdefinations/GoogleStepDef.class
+fm/framework/stepDefinitions/GoogleStepDef.class
