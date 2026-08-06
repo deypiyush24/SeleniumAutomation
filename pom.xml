@@ -17,6 +17,15 @@
     <maven.surefire.plugin.version>3.5.6</maven.surefire.plugin.version>
   </properties>
 
+
+  <repositories>
+    <repository>
+      <id>in-repo</id>
+      <url>file://${project.basedir}/repo</url>
+    </repository>
+  </repositories>
+
+
   <dependencies>
     <dependency>
       <groupId>org.piyush</groupId>
