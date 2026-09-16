@@ -38,7 +38,7 @@
         </includes>
         <systemPropertyVariables>
           <!-- This pass the System Variable into JVm Directly you fetch it Framework  -->
-          <!-- mvn test -Dcucumber.tags=@Smoke -->
+          <!-- mvn test -Dtags=@Smoke -->
           <cucumber.filter.tags>${tags}</cucumber.filter.tags>
           <runMode>${runMode}</runMode>
         </systemPropertyVariables>
